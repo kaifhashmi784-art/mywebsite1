@@ -1,37 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>My Business Website</title>
+<title>Kaif Digital Business</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
 
-body{margin:0;font-family:Arial;background:#f4f4f4}
+body{margin:0;font-family:Arial;background:#f2f2f2}
 
-header{background:#111;color:white;padding:15px;text-align:center}
+header{
+background:#111;
+color:white;
+padding:15px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0
+}
 
 nav a{color:white;margin:10px;text-decoration:none}
 
+.hero{
+background:#222;
+color:white;
+padding:70px 20px;
+text-align:center
+}
+
+.btn{
+background:#25D366;
+border:none;
+padding:10px 20px;
+color:white
+}
+
 section{padding:40px}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px
+}
 
 .card{
 background:white;
 padding:20px;
-margin:15px 0;
 border-radius:8px;
-box-shadow:0 0 10px #ccc
-}
-
-button{
-background:black;
-color:white;
-border:none;
-padding:10px 20px;
+box-shadow:0 0 8px #ccc
 }
 
 input,textarea{
 width:100%;
 padding:10px;
-margin:8px 0;
+margin:10px 0
 }
 
 footer{
@@ -41,67 +63,90 @@ text-align:center;
 padding:20px
 }
 
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px;
+border-radius:50%;
+text-decoration:none;
+font-size:22px
+}
+
 </style>
 </head>
 
 <body>
 
 <header>
-<h1>My Business</h1>
+<h2>Kaif Digital</h2>
 <nav>
 <a href="#">Home</a>
 <a href="#about">About</a>
 <a href="#services">Services</a>
+<a href="#products">Products</a>
 <a href="#contact">Contact</a>
 </nav>
 </header>
 
-<section>
-<h2>Welcome</h2>
-<p>We provide professional services for your business growth.</p>
-</section>
+<div class="hero">
+<h1>Professional Business Website</h1>
+<p>We help your business grow online</p>
+<button class="btn">Start Now</button>
+</div>
 
 <section id="about">
-<div class="card">
 <h2>About Us</h2>
-<p>We are trusted professionals helping businesses grow online.</p>
+<div class="card">
+We are professional digital service providers helping businesses grow using modern websites & marketing.
 </div>
 </section>
 
 <section id="services">
-<div class="card">
 <h2>Services</h2>
-<ul>
-<li>Website Development</li>
-<li>Digital Marketing</li>
-<li>Graphic Design</li>
-<li>SEO</li>
-</ul>
+<div class="grid">
+<div class="card">Website Development</div>
+<div class="card">Digital Marketing</div>
+<div class="card">SEO</div>
+<div class="card">Graphic Design</div>
+</div>
+</section>
+
+<section id="products">
+<h2>Products</h2>
+<div class="grid">
+<div class="card">Product 1</div>
+<div class="card">Product 2</div>
+<div class="card">Product 3</div>
 </div>
 </section>
 
 <section>
-<div class="card">
 <h2>Testimonials</h2>
-<p>⭐⭐⭐⭐⭐ Excellent service!</p>
-</div>
+<div class="card">⭐⭐⭐⭐⭐ Great Service</div>
 </section>
 
 <section id="contact">
-<div class="card">
-<h2>Contact Us</h2>
+<h2>Contact</h2>
 
-<input placeholder="Your Name">
+<input placeholder="Name">
 <input placeholder="Email">
 <textarea placeholder="Message"></textarea>
+<button class="btn">Send</button>
 
-<button>Send Message</button>
+<br><br>
 
-</div>
+<iframe src="https://maps.google.com/maps?q=delhi&t=&z=13&ie=UTF8&iwloc=&output=embed"
+width="100%" height="250"></iframe>
+
 </section>
 
+<a href="https://wa.me/919999999999" class="whatsapp">💬</a>
+
 <footer>
-<p>© 2026 My Business | All Rights Reserved</p>
+<p>© 2026 Kaif Digital | All Rights Reserved</p>
 </footer>
 
 </body>
